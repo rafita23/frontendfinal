@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>RAFAEL LOGIN</title>
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="nav" style=font-family: 'Open Sans', sans-serif;>
+        <div class="nav-container">
+            <a href="#main" class="nav-logo">RAFAEL NINA</a>
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-item">Inicio</a></li>
+                <li><a href="../index.html" class="nav-item">Sobre Nosotros</a></li>
+                <li><a href="../index.html" class="nav-item">Portafolio</a></li>
+                <li><a href="../index.html" class="nav-item">Contacto</a></li>
+                <li><a href="#" class="nav-item active">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Formulario de Login -->
+    <div class="login">
+        <img src="img/idle/1.png" id="monster" alt="">
+        <form class="formulario">
+            <label>Usuario</label>
+            <input type="text" id="input-usuario" placeholder="rafaelnina@gmail.com" autocomplete="off">
+            <label>Contraseña</label>
+            <input type="password" id="input-clave" placeholder="*******">
+            <button type="submit">INGRESAR</button>
+        </form>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
+<style>
+  
+body {
+    margin: 0;
+    padding: 0;
+   font-family: "Open Sans", sans-serif;
+    background-color: #f0f4f8; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilos del Nav */
+.nav {
+    background-color: #1a1a2e; /* Fondo oscuro */
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.nav-logo {
+    color: white;
+    font-size: 2rem; /* Tamaño grande */
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px black; /* Bordes negros */
+    transition: color 0.3s ease;
+}
+
+.nav-logo:hover {
+    color: #00bcd4;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem; /* Letras más grandes */
+    font-weight: bold;
+    text-shadow: 1px 1px 3px black; /* Bordes negros */
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover,
+.nav-item.active {
+    color: #00bcd4;
+}
+
+/* Estilos del Login */
+.login {
+    background-color: #1a1a2e; /* Fondo oscuro para el formulario */
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 6rem; /* Evita que se traslape con el nav */
+}
+
+.login img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 0rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a2e; 
+    gap: 1rem;
+}
+
+.formulario label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff; /* Texto blanco */
+    text-shadow: 1px 1px 2px black; /* Bordes negros */
+    text-align: left;
+}
+
+.formulario input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #2b2b3c; /* Fondo oscuro para el input */
+    color: #ffffff; /* Texto blanco */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.formulario input:focus {
+    border-color: #00bcd4; /* Color de enfoque */
+}
+
+.formulario button {
+    padding: 0.8rem;
+    font-size: 1.2rem; /* Tamaño de texto más grande */
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(90deg, #ff0080, #ff6600);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.formulario button:hover {
+    transform: scale(1.4);
+    opacity: 0.9;
+}
+
+</style>
